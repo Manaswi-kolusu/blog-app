@@ -3,10 +3,10 @@ POST http://localhost:4000/user-api/users
 Content-Type: application/json
 
 {
-    "firstName":"revanth",
-    "lastName":"yadav",
-    "email":"anurag.user@example.com",
-    "password":"ricky@123",
+    "firstName":"manaswi",
+    "lastName":"reddy",
+    "email":"anurag@example.com",
+    "password":"mani@123",
     "profileImageUrl":"https://example.com/profile.jpg"
 }
 
@@ -15,11 +15,11 @@ POST http://localhost:4000/author-api/users
 Content-Type: application/json
 
 {
-    "firstName":"vivek",
-    "lastName":"patel",
-    "email":"vivek@gmail.com",
-    "password":"vivek@123",
-    "profileImageUrl":"https://exameeeple.com/profile.jpg"
+    "firstName":"purush",
+    "lastName":"reddy",
+    "email":"purush@gmail.com",
+    "password":"purush@123",
+    "profileImageUrl":"https://example.com/profile.jpg"
 }
 
 ### authenticate user
@@ -28,7 +28,7 @@ Content-Type: application/json
 
 {
     "email":"anurag.user@example.com",
-    "password":"ricky@9848"
+    "password":"mani@9848"
 
 }
 
@@ -38,8 +38,8 @@ POST http://localhost:4000/author-api/authenticate
 Content-Type: application/json
 
 {
-    "email":"vivek@gmail.com",
-    "password":"vivek@123",
+    "email":"purush@gmail.com",
+    "password":"purush@123",
     "role":"AUTHOR"
 }
 
@@ -52,9 +52,9 @@ Content-Type: application/json
 
 {
     "author" : "698966083c94398791f66284",
-    "title": "programming in python",
-    "category":"programmin",
-    "content":"programming in python content"
+    "title": "programming history",
+    "category":"programming",
+    "content":"history of programming"
 }
 
 
@@ -72,16 +72,16 @@ Content-Type: application/json
 {
      "author" : "698966083c94398791f66284",
      "articleId":"6989984b5ad0a9cc5f993b8b",
-    "title": "python programming",
+    "title": "programming history",
     "category":"programming",
-    "content":"python programming content"
+    "content":"history of programming"
 }
 ###add comment to articles
 PUT http://localhost:4000/user-api/users/698966083c94398791f66284/article/698975cc989ff0ef4d95b208
 Content-Type: application/json
 
 {
-    "comment":"nice article"
+    "comment":"article is about history of programming"
 }
 
 ###delete article
@@ -140,6 +140,6 @@ PUT http://localhost:4000/common-api/change-password/6989656f73d2b14511bdc3c8
 Content-Type: application/json
 
 {
-    "password":"ricky@123",
-    "newpassword":"ricky@9848"
+    "password":"purush@123",
+    "newpassword":"purush@9848"
 }
