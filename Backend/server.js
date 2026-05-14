@@ -13,7 +13,7 @@ const  app=exp()
 //adding trust proxy
 app.set("trust proxy", 1);
 //use cors middleware
-app.use(cors({ origin:["http://localhost:5173"],credentials:true}));
+app.use(cors({ origin:["https://blog-app-1-1fhz.onrender.com"],credentials:true}));
 //add cookieParser
 app.use(cookieParser());
 //add body parser middleware
